@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Angelica Vite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Menú Fijo -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#about">Aboout </a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#cryptography">Criptography</a></li>
+        <li><a href="#contact">Public Key</a></li>
+    </ul>
+</nav>
+
+<!-- Encabezado -->
+<header>
+    <h1>Angelica Vite</h1>
+    <h2>Engineering Computer Systems Student</h2>
+    <a href="CV.pdf" download class="cv-button">Download CV</a>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/Angie.Vite.308/" target="_blank">
+            <img src="img/face.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/angi_vite" target="_blank">
+            <img src="img/insta.png" alt="Instagram">
+        </a>
+        <a href="https://mx.linkedin.com/" target="_blank">
+            <img src="img/link.png" alt="Linkedin">
+        </a>
+    </div>
+</header>
+
+<!-- Sección About -->
+<section id="about">
+    <div>
+        <h3>"Curiosity is the first step towards knowledge."</h3>
+         <p>I am a young woman passionate about technology and everything related to IT. Since I was a child, I have been fascinated by the vast world of information technologies. Currently, I am studying at the Escuela Superior de Cómputo (ESCOM) at IPN, 
+            where each day motivates me even more to pursue a career in information security and data privacy.<br/><br/>
+            My journey is just beginning, and each day is an opportunity to learn and grow. For me, information security goes beyond mere data protection; it is a constant challenge that demands creativity and technical skills. 
+            I am excited to explore new tools and techniques that will allow me to contribute to a safer digital environment.</p>
+        <h3>"In a digital world, protecting what matters is as essential as creating."</h3>
+    </div>
+    <div class="image">
+        <span class="based">Based in Mexico<br/></span>
+        <span class="age">22 years old</span>
+        <img src="img/foto.jpg" alt="Angelica Vite">
+    </div>
+</section>
+
+    <!-- Sección Educación -->
+    <section id="education">
+        <div>
+            <h2>Education</h2>
+        </div>
+        <div class="image">
+            <img src="img/est.jpg" alt="Educación">
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2020 - Present</h3>
+                <p>Ingeniería en Sistemas Computacionales, ESCOM - IPN</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2017 - 2020</h3>
+                <p>Centro de Estudios Cientificos y Tecnologico 12 "Jose Maria Morelos"</p>
+                <p>Carrera Técnica en Administración</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección Idiomas -->
+<section id="languages">
+    <h2>Languages</h2>
+    <div class="languages-list">
+        <div>
+            <p>Spanish</p>
+            <p>Native</p>
+        </div>
+        <div>
+            <p>English</p>
+            <p>Basic</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Hobbies -->
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobby-list">
+    <div class="hobby">
+        <img src="img/leer.jpg" alt="Hobby 1">
+        <div class="hobby-text">"Reading is dreaming awake, traveling without a ticket, becoming a hero, explorer, lover, or sage. 
+            It is living a thousand lives, traversing different eras and universes, feeling love, sorrow, joy, and the fullness of existence."</div>
+        </div>
+    <div class="hobby">
+        <img src="img/cocinar.jpg" alt="Hobby 2">
+        <div class="hobby-text">"Cooking is an act of creation, an intimate exploration of flavors that intertwines moments and memories that endure in the mind and soul.”</div>
+    </div>
+    <div class="hobby">
+        <img src="img/nadar.jpg" alt="Hobby 3">
+        <div class="hobby-text">"Swimming evokes a weightless freedom, where the water caresses the spirit and dissolves the worries of the world. It is contemplating from outside oneself, 
+        surrendering to the current and merging with its essence."</div>
+    </div>
+    </div>
+</section>
+
+<!-- Sección Criptografía (Carrusel) -->
+<section id="cryptography">
+    <div class="carousel-container">
+        <div class="prev">
+            <img src="img/ant.png" alt="Prev"> <!-- Icono para botón anterior -->
+        </div>
+        <div class="carousel-content">
+            <div class="carousel-item active">
+                <img src="img/diffie.jpeg" alt="Whitfield Diffie">
+                <div class="carousel-text">
+                    <h3>Whitfield Diffie</h3>
+                    <p>Born in 1944, is one of the most influential cryptographers in the history of modern cryptography. In 2015, he was awarded with the Turing Award for his significant contributions to the field.<br/><br/>
+                        He graduated in 1965 with a Bachelor of Science in Mathematics from the Massachusetts Institute of Technology (MIT), where he developed an interest in computation theory and information security. Throughout his career, 
+                        he worked at key institutions such as Bell Labs and Sun Microsystems, driving advancements in digital security.<br/><br/>
+                        His most notable contribution was "public key cryptography," a concept that revolutionized security by enabling secure message exchange without the need to share a secret key beforehand. In 1976, along with Martin Hellman, 
+                        he published the paper "New Directions in Cryptography," where they introduced the Diffie-Hellman key exchange. This method allowed encryption keys to be securely shared over insecure channels, a fundamental breakthrough for modern cryptography.<br/><br/>
+                        Diffie’s work laid the foundation for systems such as SSL/TLS, which secures web communication, and PGP, which protects email. He also served as Vice President of Information Security and Cryptography at ICANN, where he continued advancing digital security.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/feistel.jpg" alt="Feistel Encryption Algorithm">
+                <div class="carousel-text">
+                    <h3>Feistel Encryption Algorithm</h3>
+                    <p>Developed by Horst Feistel in the 1970s while working at IBM (Insternational Business Machines), is the foundation for many modern symmetric encryption algorithms, including DES (Data Encryption Standard). This cryptographic scheme 
+                        uses a structure where a plaintext block is divided into two halves; one half is encrypted while the other is iteratively combined with a key. This process is repeated multiple times, resulting in a robust encryption.<br/><br/>
+                        One of the key advantages of the Feistel algorithm is that decryption follows the same procedure as encryption, but in reverse order, simplifying its implementation. DES, developed in collaboration with Feistel, was the international 
+                        cryptographic standard for decades, protecting sensitive data in banks and governments, until it was replaced by AES (Advanced Encryption Standard) due to vulnerabilities to brute-force attacks.<br/><br/>
+                        The impact of the Feistel scheme has been significant, marking a milestone in the creation of secure and efficient symmetric ciphers, and it remains a fundamental structure in many modern encryption algorithms.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/dh_protocol.png" alt="Diffie-Hellman Protocol">
+                <div class="carousel-text">
+                    <h3>Diffie-Hellman Protocol</h3>
+                    <p>In 1976, the Diffie-Hellman protocol was created by Whitfield Diffie and Martin Hellman. This protocol introduced the concept of key exchange over an insecure channel, representing a significant advancement in communication security.<br/><br/>
+                        Before Diffie-Hellman, sharing secret keys required secure and complicated methods. The protocol allows two parties to generate a shared key without exchanging it directly, using complex mathematical functions that ensure the privacy of the process.<br/><br/>
+                        Based on the difficulty of solving the discrete logarithm problem, the protocol is secure against interception attempts. This innovation facilitated the development of public key cryptography, which enables secure communications without the risk of a key being discovered.<br/><br/>
+                        The introduction of the Diffie-Hellman protocol laid the foundation for many modern security systems, including secure internet connections and virtual private networks (VPNs). Its impact remains fundamental in the protection of data in digital environments today. </p>               </div>
+            </div>
+            </div>
+        <div class="next">
+            <img src="img/sig.png" alt="Next"> <!-- Icono para botón siguiente -->
+        </div>
+    </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contact">
+    <div class="contact-container">
+        <!-- Columna izquierda: Información de contacto -->
+        <div class="contact-left">
+            <h2>Contact Me</h2>
+            <p>Please contact me via the following email and I will respond within 24 hours.</p>
+            <p class="email">angievite98@gmail.com<br/><br/></p>
+            <p>Or call me at +52 5536-9736-91</p>
+            <div class="social-icons">
+                <img src="img/face.png" alt="Facebook">
+                <img src="img/insta.png" alt="Instagram">
+                <img src="img/link.png" alt="LinkedIn">
+            </div>
+        </div>
+        <!-- Columna derecha: Clave pública -->
+        <div class="contact-right">
+            <h3>Public Key</h3>
+            <img src="img/key.png" alt="Key Icon" class="key-icon">
+            <!--<button class="public-key-button" onclick="downloadKey()">Download Public Key</button>-->
+            <button class="public-key-button" onclick="downloadKey()">Download Public Key</button>
+        </div>
+    </div>
+</section>
+
+<!-- Pie de página -->
+<footer>
+    <p>Rocío Angélica Tovar Vite - México 2024</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
