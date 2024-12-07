@@ -1,4 +1,4 @@
-// JavaScript para el carrusel de criptografía
+// Carrusel 
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 const carouselItems = document.querySelectorAll('.carousel-item');
@@ -17,14 +17,15 @@ nextButton.addEventListener('click', () => {
 });
 
 function downloadKey() {
-    // Contenido de la llave pública
-    const publicKey = `MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkaRrzm2olpT6ad/XhM+4
-    g10nIC901d6gdxefODJxGv509adWwoyLhVR3T1IoXUNx8xVf7a+6RE9b70gupp3b
-    C5VWN71/HAZGygpmquBdwUhX7YBQVFqqOaGMts6yLuqkWe639tIbBzAoLVie7uCy
-    zskLSOZyF09Y1+CODjCLdpIWlOuV7K8JjjM0UC0W4u34Vd/Fwry/BxhLYkjEWKTm
-    4389BmQeYzecR8nTZDJmZcSGuLOjIDYUN5+FZ5dEqZxoI4iir9FtMlaXyvjf1S4j
-    ioAQMct5i64Bqpt0D0XVBCk2eMNjc/J56wpRItnGMmcMIStwCduEYR6Nocu2kXJG
-    rwIDAQAB`;
+    const publicKey = `-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAswzTDiHOpXx7hSeIxRAn
+DnzyReZKrVTOX346AlS2wOVwgEOSGS7Q43eXZpIKbidqvzBGM0guomGdRPDwKyaE
+IZ2NncJnJYTrF9sw1HV/lsbWO+rgTXmy58sqXNzFGYsB7Roz1jODhOyEsjf8Fs5n
+xM5pFaj/CaASOSK6WJxyemZgjYs6x9ONjSs0ZxnpZ7cncxB3NILOyMPH/Z7t3opg
+ehdLKD4lUUoDo7uZymLpkTdm3bDHVCFyab2m/9FQyS2SOzWhSzZ3ImQDPf/AjIag
+sjG3p+tAMrZawezCc7Dblij0W0vrfUYguD+P9jLgyCE/CvMNBdWFbA0d0gWWnfw+
+kwIDAQAB
+-----END PUBLIC KEY-----`;
 
     // Crear un Blob con la llave pública
     const blob = new Blob([publicKey], { type: 'text/plain' });
@@ -33,7 +34,7 @@ function downloadKey() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'Apublic_key.txt'; // Nombre del archivo a descargar
+    a.download = 'Key_Angie.pem'; // Nombre del archivo a descargar
     a.click();
 
     // Liberar el objeto URL
